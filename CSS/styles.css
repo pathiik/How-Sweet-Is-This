@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Area Wrapper */
+header.header-section div.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Header Area Left */
+div.header-wrapper div.header-left-area {
+    display: flex;
+    align-items: center;
+}
+
+/* Header Logo */
+div.header-left-area img#header-logo {
+    width: 100px;
+}
+
+/* Header Company Name */
+div.header-left-area p#header-company-name {
+    font-family: "Playwrite CU", cursive;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #ab7443;
+    margin-left: 10px;
+}
+
+/* Header Nav UL Links */
+div.header-wrapper nav.header-nav-area ul.header-nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 0px 20px;
+    font-size: 1.2rem;
+}
+
+/* Header Nav UL Links a */
+nav.header-nav-area ul.header-nav-links li a {
+    text-decoration: none;
+    color: #5a362c;
+    font-weight: 500;
+}
+
+/* Hover Effect */
+nav.header-nav-area ul.header-nav-links li a:hover {
+    color: #ab7443;
+}
+
+/* Active Tab */
+nav.header-nav-area ul.header-nav-links li a.active {
+    text-decoration: underline;
+    color: #ab7443;
+}
+
+/* Main Section Wrapper */
+main.main-section div.main-wrapper {
+    width: max-content;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Main Area Title Area */
+div.main-wrapper section.main-title-area {
+    text-align: center;
+}
+
+div.main-wrapper section.main-title-area h1#main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+div.main-wrapper section.main-title-area p#main-para {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+}
+
+/* Main Area Images Area */
+div.main-wrapper div.main-images-area {
+    display: grid;
+    width: max-content;
+    margin: 30px auto;
+    grid-template-columns: repeat(2, 300px);
+    gap: 50px;
+}
+
+div.main-wrapper div.main-images-area img.main-images-gallery {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+img.main-images-gallery:hover {
+    transform: scale(1.1);
+}
+
+/* Main Area Product Area */
+.product-info-area h2#info-area-heading {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+#product-info-details-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#product-info-details-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#product-info-details-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section.product-info-top {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    gap: 20px;
+}
+
+div.product-info-pic img {
+    width: 350px;
+}
+
+/* Main Table Area */
+table {
+    width: 40%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #5a362c;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ab7443;
+    color: white;
+}
+
+tr > td:last-child {
+    text-align: right;
+}
+
+/* Footer Section Style */
+footer.footer-section {
+    background-color: rgba(171, 116, 67, 0.434);
+    padding: 20px 0 10px 0;
+}
+
+div.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+div.footer-top div.footer-left-area img#footer-logo {
+    width: 100px;
+}
+
+div.footer-top div.footer-left-area p#footer-company-name {
+    font-family: "Playwrite CU", cursive;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #ab7443;
+}
+
+section.footer-form-area h2.form-title {
+    text-align: center;
+}
+
+.nutritional-header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* Footer Form Area */
+div.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+button.form-submit-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ab7443;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.form-submit-btn:hover {
+    background-color: #5a362c;
+}
+
+div.footer-bottom-area {
+    text-align: center;
+}
